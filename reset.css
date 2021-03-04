@@ -1,0 +1,192 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.english{
+    word-wrap: break-word;
+    word-break: break-all;
+}
+p{
+    margin-bottom: 10px !important;
+}
+/*所有运用地图-表格的界面*/
+.use-map-table-box {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+}
+.use-map-table-box > .top {
+    width: 100%;
+}
+.use-map-table-box > .bottom {
+    width: 100%;
+    margin-top: 20px;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+.use-map-table-box > .bottom > .left {
+    position: relative;
+    height: 600px;
+}
+.use-map-table-box > .bottom > .left > div> .analysis-box, .use-map-table-box > .bottom > .left > .position-box{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    padding: 0 10px;
+    flex-wrap: wrap;
+}
+.use-map-table-box > .bottom > .left > div > .analysis-box{
+    bottom: 10px;
+}
+.use-map-table-box > .bottom > .left > .position-box{
+    top: 10px;
+}
+.use-map-table-box > .bottom > .left > .position-box > .select-box {
+
+}
+.use-map-table-box > .bottom > .left > .position-box > .radius-box {
+
+}
+.use-map-table-box > .bottom > .left > .position-box > .search-box {
+    /*width: 300px;*/
+    display: flex;
+}
+.use-map-table-box > .bottom > .left .map {
+    width: 100%;
+    height: 100%;
+}
+.use-map-table-box > .bottom > .right {
+    padding-left: 20px !important;
+}
+.use-map-table-box > .bottom > .right section.content {
+    padding: 15px 0;
+}
+
+ul.flex {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+ul.flex > li {
+    margin: 10px 20px 0 20px;
+}
+
+.input-name{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 20px 0 0;
+}
+
+.col{
+    padding: 0 !important;
+}
+
+@media only screen and (max-width: 768px) {
+    .use-map-table-box > .bottom > .right {
+        padding-left: 0 !important;
+    }
+    .use-map-table-box > .bottom > .left {
+        height: 400px;
+    }
+}
+
+.noScroll::-webkit-scrollbar{
+    display: none;
+}
+
+.orangeGradient{
+    background-image: linear-gradient(135deg, #FCCF31 10%, #F55555 100%);
+}
+.blueGradient{
+    background-image: linear-gradient(135deg, #3C8CE7 10%, #00EAFF 100%);
+}
+.purpleGradient{
+    background-image: linear-gradient(135deg, #FF7AF5 10%, #513162 100%);
+}
+.redGradient{
+    background-image: linear-gradient( 135deg, #E80505 10%, #FDD819 100%);
+}
+
+/*骨架屏样式*/
+.sk-list {
+    color: #eee;
+}
+.sk-border {
+    /* outline: 1px solid #eee !important; */
+    border-color: #eee;
+}
+.sk-text {
+    --c: #eee;
+    --fp: 0%;
+    --sp: 0%;
+    --lh: 0;
+    display: inline-block;
+    background-origin: content-box !important;
+    background-clip: content-box !important;
+    background-color: transparent !important;
+    background-repeat: repeat-y !important;
+    /* color: var(--c) !important; */
+    background-image: linear-gradient(transparent var(--fp), var(--c) 0, var(--c) var(--sp), transparent 0);
+    background-size: 100% var(--lh);
+    color: transparent !important;
+}
